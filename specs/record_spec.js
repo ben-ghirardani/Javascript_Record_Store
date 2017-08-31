@@ -1,15 +1,20 @@
 var assert = require('assert');
 var Record = require('../record.js')
 
-Describe("Record", function() {
+describe("Record", function() {
+
+  var record1;
 
   beforeEach(function(){
     record1 = new Record("Adele", "Hello", "Pop", 10)
   })
 
   it('should have an artist', function(){
-    assert.strictEqual(record.artist, "Adele")
+    assert.strictEqual(record1.artist, "Adele")
   })
 
+  it('should have a title', function(){
+    assert.strictEqual(record1.title, "Hello")
+  })
 
 })
