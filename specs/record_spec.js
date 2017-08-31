@@ -25,4 +25,8 @@ describe("Record", function() {
     assert.strictEqual(record1.price, 10)
   })
 
+  it("shpuld print out record properties", function(){
+    assert.deepEqual(record1.print(), "Artist: Adele, Title: Hello, Genre: Pop, Price: 10")
+  })
+
 })
