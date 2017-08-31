@@ -17,4 +17,12 @@ describe("Record", function() {
     assert.strictEqual(record1.title, "Hello")
   })
 
+  it('should have a genre', function(){
+    assert.strictEqual(record1.genre, "Pop")
+  })
+
+  it('should have a price', function(){
+    assert.strictEqual(record1.price, 10)
+  })
+
 })
