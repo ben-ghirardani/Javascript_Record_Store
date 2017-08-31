@@ -13,8 +13,16 @@ describe("Record Store", function(){
     assert.strictEqual(recordStore1.name, "Keith's Records");
   })
 
-  xit("should have a city", function(){
+  it("should have a city", function(){
     assert.strictEqual(recordStore1.city, "Edinburgh");
+  })
+
+  it("should have empty inventory", function(){
+    assert.strictEqual(recordStore1.inventory.length, 0);
+  })
+
+  it("should have empty balance", function(){
+    assert.strictEqual(recordStore1.balance, 0);
   })
 
 })
